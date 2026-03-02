@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <title>Cookie Website Redesign</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="recipe-layout" aria-labelledby="recipe-title">
+    <header class="hero" role="banner">
+      <div class="hero-content">
+        <p class="eyebrow">Pranathi's Recipe</p>
+        <h1 id="recipe-title">Classic Chocolate Chip Cookies</h1>
+        <p class="hero-copy">
+          These classic chocolate chip cookies are crispy on the edges, chewy in
+          the middle, and packed with chocolate chips.
+        </p>
+      </div>
+
+      <img
+        class="hero-image"
+        src="./images/newimagecookie.png"
+        alt="cookiesimage"
+      />
+    </header>
+
+    <section class="section2">
+      <h2 class="visually-hidden">Recipe Metadata</h2>
+
+      <div class="section2_repeatingcards">
+        <p class="section2_label">Prep Time</p>
+        <p class="section2_value">20 mins</p>
+      </div>
+
+      <div class="section2_repeatingcards">
+        <p class="section2_label">Cook</p>
+        <p class="section2_value">12 mins</p>
+      </div>
+
+      <div class="section2_repeatingcards">
+        <p class="section2_label">Total Time</p>
+        <p class="section2_value">27 mins</p>
+      </div>
+
+      <div class="section2_repeatingcards">
+        <p class="section2_label">Servings</p>
+        <p class="section2_value">20 cookies</p>
+      </div>
+
+      <div class="section2_repeatingcards">
+        <p class="section2_label">Difficulty</p>
+        <p class="section2_value">Easy</p>
+      </div>
+    </section>
+
+    <section class="ingredients" aria-labelledby="ingredients-title">
+      <h2 id="ingredients-title">Ingredients</h2>
+
+      <ul class="ingredient-list">
+        <li>1 cup unsalted butter, softened</li>
+        <li>1 cup granulated sugar</li>
+        <li>1 cup packed brown sugar</li>
+        <li>2 large eggs</li>
+        <li>2 teaspoons vanilla extract</li>
+        <li>3 cups all-purpose flour</li>
+        <li>1 teaspoon baking soda</li>
+        <li>1/2 teaspoon salt</li>
+        <li>2 cups semisweet chocolate chips</li>
+      </ul>
+    </section>
+
+    <section class="instructions" aria-labelledby="instructions-title">
+      <h2 id="instructions-title">Instructions</h2>
+      <ol class="step-list">
+        <li>
+          <span class="step-number" aria-hidden="true">1</span>
+          <p>
+            Preheat oven to 375&deg;F (190&deg;C). Line baking sheets with
+            parchment paper.
+          </p>
+        </li>
+
+        <li>
+          <span class="step-number" aria-hidden="true">2</span>
+          <p>
+            In a medium bowl, whisk together flour, baking soda, and salt. Set
+            aside.
+          </p>
+        </li>
+
+        <li>
+          <span class="step-number" aria-hidden="true">3</span>
+          <p>
+            In a large bowl, cream together butter and sugars until light and
+            fluffy.
+          </p>
+        </li>
+
+        <li>
+          <span class="step-number" aria-hidden="true">4</span>
+          <p>Beat in eggs and vanilla extract.</p>
+        </li>
+
+        <li>
+          <span class="step-number" aria-hidden="true">5</span>
+          <p>
+            In a separate bowl, whisk together flour, baking soda, and salt.
+          </p>
+        </li>
+
+        <li>
+          <span class="step-number" aria-hidden="true">6</span>
+          <p>
+            Gradually add the dry ingredients to the wet ingredients, mixing
+            until just combined.
+          </p>
+        </li>
+
+        <li>
+          <span class="step-number" aria-hidden="true">7</span>
+          <p>Stir in chocolate chips.</p>
+        </li>
+
+        <li>
+          <span class="step-number" aria-hidden="true">8</span>
+          <p>Drop rounded tablespoons of dough onto prepared baking sheets.</p>
+        </li>
+
+        <li>
+          <span class="step-number" aria-hidden="true">9</span>
+          <p>Bake for 10 minutes until golden brown.</p>
+        </li>
+
+        <li>
+          <span class="step-number" aria-hidden="true">10</span>
+          <p>
+            Cool on baking sheet for 2 minutes before transferring to wire
+            racks.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="notes" aria-labelledby="notes-title">
+      <h2 id="notes-title">Kitchen Notes</h2>
+      <div class="notes-row">
+        <article class="note-card">
+          <h3>Recipe Source</h3>
+          <p>Adapted from a traditional family cookbook.</p>
+        </article>
+
+        <article class="note-card">
+          <h3>Nutrition</h3>
+          <p>Approximately 150 calories per cookie.</p>
+        </article>
+
+        <article class="note-card">
+          <h3>Tags</h3>
+          <div class="tags-row">
+            <span class="tag">Dessert</span>
+            <span class="tag">Baking</span>
+            <span class="tag">Cookies</span>
+            <span class="tag">Chocolate</span>
+            <span class="tag">Family-friendly</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
