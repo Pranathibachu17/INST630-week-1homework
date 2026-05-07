@@ -165,11 +165,11 @@
       console.error("Error loading image configuration:", err);
     });
 
-  var hasVisited = localStorage.getItem("hasVisitedExperience");
+  var hasVisited = sessionStorage.getItem("hasVisitedExperience");
   if (!hasVisited) {
     window.setTimeout(function() {
       openModal();
-      localStorage.setItem("hasVisitedExperience", "true");
+      sessionStorage.setItem("hasVisitedExperience", "true");
     }, MODAL_DELAY_MS);
   }
 })();

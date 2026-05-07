@@ -17,6 +17,7 @@
     dec: "December"
   };
 
+
   var FLIPBOOK_CONFIG = {
     width: 1000,
     height: 650,
@@ -67,6 +68,8 @@
     var urlParams = new URLSearchParams(window.location.search);
     return urlParams.get("folder") || "jan";
   }
+
+
 
   // Update month name in caption
   function updateMonthName(folder) {
