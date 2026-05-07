@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Browse interactive fashion editorial magazines with a realistic page-flipping experience.">
+    <title>Fashion Editorial - The Lookbook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/pages/editorial/style.css">
+    <link rel="stylesheet" href="../../css/pages/editorial/motion.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
+    <script src="../../js/flipbook.js"></script>
+</head>
+<body class="editorial-body">
+    <main class="editorial">
+        <div class="editorial__shell">
+            <nav aria-label="Navigation">
+                <a class="editorial__back" href="../experience/index.html" aria-label="Return to experience page">
+                    <img
+                        class="editorial__back-icon"
+                        src="../../assets/images/editorial/icon.svg"
+                        alt=""
+                        width="24"
+                        height="24"
+                        aria-hidden="true"
+                    />
+                    <span class="editorial__back-text">Back to Explore</span>
+                </a>
+            </nav>
+
+            <div class="editorial__main">
+                <article class="editorial__frame" aria-labelledby="magazine-caption">
+                    <div class="editorial__duo">
+                        <div class="flipbook-container" role="region" aria-label="Magazine flipbook viewer">
+                            <div id="flipbook" tabindex="0" aria-live="polite" aria-atomic="false">
+                                <div class="page">
+                                    <img src="../../assets/images/editorial/jan/1.jpg" alt="Magazine page 1" loading="lazy">
+                                </div>
+                                <div class="page">
+                                    <img src="../../assets/images/editorial/jan/2.jpg" alt="Magazine page 2" loading="lazy">
+                                </div>
+                                <div class="page">
+                                    <img src="../../assets/images/editorial/jan/3.jpg" alt="Magazine page 3" loading="lazy">
+                                </div>
+                                <div class="page">
+                                    <img src="../../assets/images/editorial/jan/4.jpg" alt="Magazine page 4" loading="lazy">
+                                </div>
+                                <div class="page">
+                                    <img src="../../assets/images/editorial/jan/5.jpg" alt="Magazine page 5" loading="lazy">
+                                </div>
+                                <div class="page">
+                                    <img src="../../assets/images/editorial/jan/6.jpg" alt="Magazine page 6" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="editorial__caption" id="magazine-caption">
+                        Vogue USA <span id="monthName">May</span> 2026
+                    </p>
+                </article>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

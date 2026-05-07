@@ -1,0 +1,187 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.intro-body {
+  margin: 0;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  max-height: 100dvh;
+  max-height: 100svh;
+  overflow: hidden;
+  overscroll-behavior: none;
+  background: #f9f9f9;
+  font-family: "Montserrat", system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+.intro {
+  position: relative;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background: #f9f9f9;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* intro.svg: viewBox 0 0 1440 990 (#F9F9F9 + illustration with opacity in-file) */
+.intro__bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  opacity: 1;
+  pointer-events: none;
+  background-image: url('../assets/images/intro.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Frame 8:312 — centered, w 884, gap 24, top calc(50% - 50px) */
+.intro__content {
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 50px);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: min(884px, calc(100% - 48px));
+  z-index: 2;
+  padding: 0 24px;
+  pointer-events: none;
+}
+
+.intro__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.intro__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(377px, 100%);
+  text-align: center;
+}
+
+.intro__eyebrow {
+  margin: 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: normal;
+  color: #ff0193;
+  text-align: center;
+}
+
+.intro__headline {
+  margin: 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: normal;
+  letter-spacing: -3.25px;
+  color: #000000;
+  text-align: center;
+}
+
+.intro__desc {
+  margin: 0;
+  width: 100%;
+  max-width: 884px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+  text-align: center;
+}
+
+/* Button 8:317 — 258×60 */
+.intro__cta {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 258px;
+  max-width: 100%;
+  height: 60px;
+  padding: 0 16px;
+  background: #000000;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 38px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.intro__cta:hover {
+  opacity: 0.92;
+}
+
+.intro__cta:focus-visible {
+  outline: 2px solid #ff0193;
+  outline-offset: 4px;
+}
+
+@media (max-width: 640px) {
+  .intro__bg {
+    background-position: center 55%;
+  }
+
+  .intro__headline {
+    font-size: clamp(28px, 9vw, 48px);
+    letter-spacing: -0.06em;
+  }
+
+  .intro__eyebrow {
+    font-size: clamp(18px, 4.5vw, 24px);
+  }
+
+  .intro__desc {
+    font-size: clamp(15px, 3.8vw, 20px);
+    line-height: 1.45;
+  }
+
+  .intro__content {
+    top: 50%;
+    padding: 0 20px;
+  }
+
+  .intro__cta {
+    height: 56px;
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro__cta {
+    transition: none;
+  }
+}
